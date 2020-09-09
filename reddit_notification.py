@@ -6,10 +6,10 @@ import praw
 #send_push("Test")
 
 reddit = praw.Reddit(client_id = reddit_client_id,
-					client_secret = reddit_client_secret,
-					password = reddit_password,
-					user_agent = "Linux device",
-					username = reddit_username)
+			client_secret = reddit_client_secret,
+			password = reddit_password,
+			user_agent = "Linux device",
+			username = reddit_username)
 					
 print(reddit.user.me())
 
