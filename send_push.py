@@ -10,6 +10,7 @@ def send_push(message):
         urllib.parse.urlencode({
             "token": app_token,
             "user": user_token,
-            "message": message
+            "message": message,
+            "html": 1
         }), {"Content-type": "application/x-www-form-urlencoded"})
     conn.getresponse()
