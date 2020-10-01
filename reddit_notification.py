@@ -38,5 +38,5 @@ for i in range(0,len(subreddits)):
     push_message = push_message + f"\n<a href={urls[i]}>{subreddits[i]}</a>"
     text_message = text_message + f"\n\n{subreddits[i]} : \n{urls[i]} "
 
-#send_sms(text_message)
+send_sms(text_message)
 send_push(push_message)
